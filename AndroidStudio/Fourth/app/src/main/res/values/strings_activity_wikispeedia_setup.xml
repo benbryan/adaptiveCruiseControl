@@ -1,0 +1,14 @@
+<resources>
+    <string name="title_activity_wikispeedia_setup">Wikispeedia Setup</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general"></string>
+    <string name="pref_title_user_info">User info</string>
+    <string name="pref_title_username_private">Private username</string>
+    <string name="pref_title_username_public">Public username</string>
+    <string name="pref_title_email">Email address</string>
+
+
+</resources>

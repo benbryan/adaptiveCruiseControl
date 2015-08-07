@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Cruise Control</string>
+    <string name="title_activity_cruise_control">Cruise Control</string>
+    <string name="title_activity_acc__test">ACC_Test</string>
+
+    <string name="title_activity_cruise_control_setup">Cruise Control Setup</string>
+    <string name="unsetADC_ResultText">unset</string>
+    <string name="title_activity_select_bluetooth_device">Select Bluetooth Device</string>
+    <string name="text_cruise_control_service">Cruise Control Service</string>
+    <string name="text_cruise_control_service_stopped">Cruise Control Service Stopped</string>
+    <string name="text_cruise_control_service_label">Cruise Control</string>
+    <string name="text_cruise_control_service_started">Cruise Control service started</string>
+    <string name="local_service_connected">Cruise Control service connected</string>
+    <string name="local_service_disconnected">Cruise Control service disconnected</string>
+    <string name="file_profile_DAC_to_ADC">profile_DAC_to_ADC</string>
+    <string name="file_profileButtons">file_profileButtons</string>
+    <string name="test_delete_speed_limit">Delete Speed Limit</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="pref_title_wikispeedia_enabled">Enable</string>
+    <string name="key_username_private">key_username_private</string>
+    <string name="key_username_public">key_username_public</string>
+    <string name="key_email">key_email</string>
+    <string name="pref_header_wikispeedia_user">Wikispeedia user</string>
+    <string name="key_wikispeedia_enabled">wikispeedia_enabled</string>
+
+
+</resources>

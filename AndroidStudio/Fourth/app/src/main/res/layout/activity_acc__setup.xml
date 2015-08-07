@@ -1,0 +1,264 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="info.benbryan.cruseControl.CruiseControlSetup">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RadioGroup
+                android:layout_column="0"
+                android:id="@+id/radioGroupProgramTest">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sample"
+                    android:id="@+id/radioButtonSample"
+                    android:layout_column="0"
+                    android:checked="true" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Test"
+                    android:id="@+id/radioButtonTest"
+                    android:layout_column="0"
+                    android:checked="false" />
+            </RadioGroup>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile Loaded"
+                android:id="@+id/checkBoxProfileLoaded"
+                android:layout_weight="1"
+                android:layout_column="1"
+                android:checked="false" />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Profile"
+                android:id="@+id/buttonRunTests"
+                android:layout_column="2"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:enabled="true" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="ADC"
+                android:id="@+id/textView2"
+                android:layout_weight="1"
+                android:layout_column="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="DAC"
+                android:id="@+id/textView"
+                android:layout_weight="1"
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resume"
+                android:id="@+id/buttonResume"
+                android:layout_column="0"
+                android:clickable="true"
+                android:enabled="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/editTextResumeADC"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:text="@string/unsetADC_ResultText"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/editTextResumeDAC"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:text="@string/unsetADC_ResultText" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accelerate"
+                android:id="@+id/buttonAccelerate"
+                android:layout_column="0"
+                android:clickable="true"
+                android:enabled="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/editTextAccelerateADC"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:text="@string/unsetADC_ResultText" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/editTextAccelerateDAC"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:text="@string/unsetADC_ResultText" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set"
+                android:id="@+id/buttonSet"
+                android:layout_column="0"
+                android:clickable="true"
+                android:enabled="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/editTextSetADC"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:text="@string/unsetADC_ResultText" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/editTextSetDAC"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:text="@string/unsetADC_ResultText" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coast"
+                android:id="@+id/buttonCoast"
+                android:layout_column="0"
+                android:clickable="true"
+                android:enabled="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/editTextCoastADC"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:text="@string/unsetADC_ResultText" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/editTextCoastDAC"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:text="@string/unsetADC_ResultText" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Off"
+                android:id="@+id/buttonOff"
+                android:layout_column="0"
+                android:clickable="true"
+                android:enabled="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/editTextOffADC"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:text="@string/unsetADC_ResultText" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/editTextOffDAC"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:text="@string/unsetADC_ResultText" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </TableLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageViewDacToAdcPlot"
+        android:layout_below="@+id/tableLayout"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
